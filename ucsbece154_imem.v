@@ -23,12 +23,13 @@ module ucsbece154_imem #(
 
   parameter LOG_BLOCK_WORDS = $clog2(BLOCK_WORDS);
 
-  parameter idle = 2'b00,
-            fetch = 2'b01,
-            send_first = 2'b10,
-            send_rest = 2'b11;
+  parameter idle = 3'b000,
+            fetch = 3'b001,
+            send_first = 3'b010,
+            send_rest = 3'b011,
+            send_prefetcher = 3'b100;
            
-  reg [1:0] state_reg, state_next;
+  reg [2:0] state_reg, state_next;
   reg fetch_start, send_start;
   reg [5:0] fetch_count;
   reg [31:0] send_count;
@@ -52,17 +53,22 @@ module ucsbece154_imem #(
   always @(posedge clk) begin
     if (state_reg == idle || state_next == fetch)
       a_i <= ReadAddress;
-    else if (state_reg == send_first && state_next == send_rest) // after first word
-        if (block_index == (BLOCK_WORDS - 1)) // jump to first word of block if needed
-          a_i <= a_i - 4 * (BLOCK_WORDS - 1);
-        else
-          a_i <= a_i + 4;
-    else if (state_reg == send_rest) begin
+    else if (state_reg == send_first && state_next == send_rest) begin // after first word
       if (block_index == (BLOCK_WORDS - 1)) // jump to first word of block if needed
         a_i <= a_i - 4 * (BLOCK_WORDS - 1);
       else
         a_i <= a_i + 4;
     end
+    else if (state_reg == send_rest) begin
+      if (block_index == (BLOCK_WORDS - 1)) // jump to first word of block if needed
+        a_i <= a_i - 4 * (BLOCK_WORDS - 1);
+      else if (send_count == BLOCK_WORDS - 1) begin
+        a_i <= base_address + 32'd16;
+      end else
+        a_i <= a_i + 4;
+    end
+    else if (state_reg == send_prefetcher)
+      a_i <= a_i + 4;
     else
       a_i <= ReadAddress;
   end
@@ -70,7 +76,7 @@ module ucsbece154_imem #(
   assign block_index = a_i[3:2];
    
   always @(*) begin
-    if (state_reg == send_first || state_reg == send_rest) begin
+    if (state_reg == send_first || state_reg == send_rest || state_reg == send_prefetcher) begin
       DataIn = rd_o;
     end
     else begin
@@ -102,7 +108,11 @@ module ucsbece154_imem #(
       end
       send_rest: begin
         DataReady = 1'b1;
-        if (send_count == BLOCK_WORDS - 1) state_next = idle;
+        if (send_count == BLOCK_WORDS - 1) state_next = send_prefetcher;
+      end
+      send_prefetcher: begin
+        DataReady = 1'b1;
+        if (send_count == 2 * BLOCK_WORDS -1) state_next = idle;
       end
       default: state_next = idle;
     endcase
@@ -132,7 +142,7 @@ module ucsbece154_imem #(
     if (reset || send_start) begin
       send_count <= 0;
     end else begin
-      if (send_count == BLOCK_WORDS - 1) send_count <= 0;
+      if (send_count == 2*BLOCK_WORDS - 1) send_count <= 0;
       else send_count <= send_count + 1;
     end
   end

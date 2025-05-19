@@ -1,0 +1,1429 @@
+# Reading pref.tcl
+# //  ModelSim SE-64 10.7d Feb 15 2019 Linux 4.18.0-553.51.1.el8_10.x86_64
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -gui -voptargs="+acc=lprn" ucsbece154b_top_tb 
+# Start time: 15:13:44 on May 19,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.ucsbece154b_top_tb(fast)
+# Loading work.ucsbece154b_top(fast)
+# Loading work.ucsbece154b_icache(fast)
+# Loading work.ucsbece154b_riscv_pipe(fast)
+# Loading work.ucsbece154b_controller(fast)
+# Loading work.ucsbece154b_datapath(fast)
+# Loading work.ucsbece154b_rf(fast)
+# Loading work.ucsbece154b_alu(fast)
+# Loading work.ucsbece154b_branch(fast)
+# Loading work.ucsbece154_imem(fast)
+# Loading work.ucsbece154_dmem(fast)
+add wave -position insertpoint sim:/ucsbece154b_top_tb/top/icache/*
+add wave -position insertpoint sim:/ucsbece154b_top_tb/top/riscv/*
+add wave -position insertpoint sim:/ucsbece154b_top_tb/top/imem/*
+run
+# Begin simulation.
+# ** Warning: Unsupported ALUop given: x
+#    Time: 0 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUOp given: x
+#    Time: 4 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.alu File: ucsbece154b_alu.v Line: 26
+# ** Warning: Unsupported ALUOp given: x
+#    Time: 4 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.alu File: ucsbece154b_alu.v Line: 26
+# ** Warning: Attempted to write to $zero register
+#    Time: 11 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 13 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 15 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 17 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 19 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 21 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 23 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 25 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 27 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 29 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 31 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 33 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 35 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 37 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 39 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 41 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 43 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 45 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 47 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 49 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 51 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 53 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 55 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 57 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 59 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 61 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 63 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 65 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 67 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 69 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 71 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 73 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 75 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 77 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 79 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 81 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 83 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 85 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 87 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 89 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 91 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+run
+# ** Warning: Attempted to write to $zero register
+#    Time: 101 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 103 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 105 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 107 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 109 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 111 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 113 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 115 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 117 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 119 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 121 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 123 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 125 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 127 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 129 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 131 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 133 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 135 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 137 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 139 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 141 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 143 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 145 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 147 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 149 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 151 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 153 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 155 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 157 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 159 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 161 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 163 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 165 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 167 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 169 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 171 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 173 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 175 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 177 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 179 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 181 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 183 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 185 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 195 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 197 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 199 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+run
+# ** Warning: Attempted to write to $zero register
+#    Time: 201 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 203 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 205 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 207 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 209 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 211 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 213 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 215 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 217 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 219 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 221 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 223 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 225 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 227 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 229 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 231 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 233 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 235 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 237 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 239 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 241 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 243 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 245 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 247 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 249 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 251 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 253 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 255 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 257 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 259 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 261 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 263 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 265 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 267 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 269 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 271 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 273 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 275 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 277 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 279 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 289 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 291 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 293 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 295 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 297 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 299 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+run
+# ** Warning: Attempted to write to $zero register
+#    Time: 301 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 303 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 305 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 307 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 309 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 311 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 313 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 315 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 317 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 319 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 321 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 323 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 325 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 327 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 329 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 331 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 333 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 335 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 337 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 339 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 341 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 343 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 345 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 347 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 349 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 351 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 353 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 355 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 357 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 359 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 361 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 363 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 365 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 367 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 369 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 371 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 373 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 374 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 383 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 384 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 385 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 393 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 395 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 397 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 399 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+run
+# ** Warning: Attempted to write to $zero register
+#    Time: 401 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 403 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 405 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 407 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 409 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 411 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 413 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 415 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 417 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 419 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 421 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 423 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 425 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 427 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 429 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 431 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 433 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 435 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 437 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 439 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 441 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 443 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 445 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 447 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 449 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 451 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 453 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 455 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 457 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 459 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 461 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 463 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 465 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 467 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 469 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 476 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 477 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 479 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 481 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 485 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 487 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 489 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 491 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 493 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 495 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 497 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 499 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+run
+# ** Warning: Attempted to write to $zero register
+#    Time: 501 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 503 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 505 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 507 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 509 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 511 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 513 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 515 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 517 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 519 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 521 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 523 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 525 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 527 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 529 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 531 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 533 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 535 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 537 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 539 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 541 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 543 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 545 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 547 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 549 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 551 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 553 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 555 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 557 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 559 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 561 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 562 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 563 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 574 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 575 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 590 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 592 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 594 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 597 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+run
+# ** Warning: Unsupported ALUop given: x
+#    Time: 630 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 646 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 648 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 653 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 662 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 668 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 686 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+run
+# ** Warning: Unsupported ALUop given: x
+#    Time: 702 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 704 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 709 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 738 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 754 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 756 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 761 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 770 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 776 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 794 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+run
+# ** Warning: Unsupported ALUop given: x
+#    Time: 810 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 812 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 817 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 846 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 862 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 864 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 869 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 878 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 884 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+run
+# ** Warning: Unsupported ALUop given: x
+#    Time: 902 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 918 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 920 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 925 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 954 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 970 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 972 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 977 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 986 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 992 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+run
+# ** Warning: Unsupported ALUop given: x
+#    Time: 1010 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 1026 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 1028 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 1033 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 1062 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 1078 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 1080 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 1084 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 1085 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1093 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1095 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1097 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1099 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+run
+# ** Warning: Attempted to write to $zero register
+#    Time: 1101 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1103 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1105 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1107 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1109 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1111 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1113 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1115 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1117 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1119 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1121 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1123 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1125 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1127 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1129 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1131 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1133 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1135 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1137 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1139 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1141 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1143 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1145 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1147 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1149 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1151 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1153 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1155 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1157 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1159 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1161 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1163 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1165 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1167 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1169 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 1170 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 1171 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUOp given: x
+#    Time: 1172 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.alu File: ucsbece154b_alu.v Line: 26
+# ** Warning: Unsupported ALUOp given: x
+#    Time: 1172 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.alu File: ucsbece154b_alu.v Line: 26
+# ** Warning: Attempted to write to $zero register
+#    Time: 1173 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1175 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+#cycles =         587
+# ** Error: reached last instruction
+#    Time: 1179 ns  Scope: ucsbece154b_top_tb File: ucsbece154b_top_tb.v Line: 98
+# End simulation.
+# ** Note: $stop    : ucsbece154b_top_tb.v(109)
+#    Time: 1179 ns  Iteration: 1  Instance: /ucsbece154b_top_tb
+# Break in Module ucsbece154b_top_tb at ucsbece154b_top_tb.v line 109
+run
+run
+add wave -position insertpoint sim:/ucsbece154b_top_tb/top/riscv/dp/rf/*
+run
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.ucsbece154b_top_tb(fast)
+# Loading work.ucsbece154b_top(fast)
+# Loading work.ucsbece154b_icache(fast)
+# Loading work.ucsbece154b_riscv_pipe(fast)
+# Loading work.ucsbece154b_controller(fast)
+# Loading work.ucsbece154b_datapath(fast)
+# Loading work.ucsbece154b_rf(fast)
+# Loading work.ucsbece154b_alu(fast)
+# Loading work.ucsbece154b_branch(fast)
+# Loading work.ucsbece154_imem(fast)
+# Loading work.ucsbece154_dmem(fast)
+run
+# Begin simulation.
+# ** Warning: Unsupported ALUop given: x
+#    Time: 0 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUOp given: x
+#    Time: 4 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.alu File: ucsbece154b_alu.v Line: 26
+# ** Warning: Unsupported ALUOp given: x
+#    Time: 4 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.alu File: ucsbece154b_alu.v Line: 26
+# ** Warning: Attempted to write to $zero register
+#    Time: 11 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 13 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 15 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 17 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 19 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 21 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 23 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 25 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 27 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 29 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 31 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 33 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 35 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 37 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 39 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 41 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 43 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 45 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 47 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 49 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 51 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 53 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 55 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 57 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 59 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 61 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 63 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 65 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 67 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 69 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 71 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 73 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 75 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 77 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 79 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 81 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 83 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 85 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 87 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 89 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 91 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+run
+# ** Warning: Attempted to write to $zero register
+#    Time: 101 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 103 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 105 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 107 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 109 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 111 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 113 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 115 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 117 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 119 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 121 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 123 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 125 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 127 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 129 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 131 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 133 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 135 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 137 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 139 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 141 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 143 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 145 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 147 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 149 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 151 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 153 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 155 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 157 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 159 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 161 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 163 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 165 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 167 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 169 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 171 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 173 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 175 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 177 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 179 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 181 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 183 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 185 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 195 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 197 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 199 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+run
+# ** Warning: Attempted to write to $zero register
+#    Time: 201 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 203 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 205 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 207 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 209 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 211 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 213 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 215 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 217 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 219 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 221 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 223 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 225 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 227 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 229 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 231 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 233 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 235 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 237 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 239 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 241 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 243 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 245 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 247 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 249 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 251 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 253 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 255 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 257 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 259 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 261 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 263 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 265 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 267 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 269 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 271 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 273 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 275 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 277 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 279 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 289 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 291 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 293 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 295 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 297 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 299 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+run
+# ** Warning: Attempted to write to $zero register
+#    Time: 301 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 303 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 305 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 307 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 309 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 311 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 313 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 315 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 317 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 319 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 321 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 323 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 325 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 327 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 329 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 331 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 333 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 335 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 337 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 339 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 341 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 343 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 345 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 347 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 349 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 351 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 353 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 355 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 357 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 359 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 361 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 363 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 365 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 367 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 369 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 371 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 373 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 374 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 383 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 384 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 385 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 393 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 395 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 397 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 399 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+run
+# ** Warning: Attempted to write to $zero register
+#    Time: 401 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 403 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 405 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 407 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 409 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 411 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 413 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 415 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 417 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 419 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 421 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 423 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 425 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 427 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 429 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 431 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 433 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 435 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 437 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 439 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 441 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 443 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 445 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 447 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 449 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 451 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 453 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 455 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 457 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 459 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 461 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 463 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 465 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 467 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 469 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 476 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 477 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 479 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 481 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 485 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 487 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 489 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 491 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 493 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 495 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 497 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 499 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+run
+# ** Warning: Attempted to write to $zero register
+#    Time: 501 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 503 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 505 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 507 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 509 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 511 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 513 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 515 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 517 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 519 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 521 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 523 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 525 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 527 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 529 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 531 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 533 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 535 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 537 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 539 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 541 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 543 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 545 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 547 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 549 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 551 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 553 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 555 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 557 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 559 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 561 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 562 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 563 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 574 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 575 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 590 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 592 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 594 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 597 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+run
+# ** Warning: Unsupported ALUop given: x
+#    Time: 630 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 646 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 648 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 653 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 662 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 668 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 686 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+run
+# ** Warning: Unsupported ALUop given: x
+#    Time: 702 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 704 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 709 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 738 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 754 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 756 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 761 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 770 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 776 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 794 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+run
+# ** Warning: Unsupported ALUop given: x
+#    Time: 810 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 812 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 817 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 846 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 862 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 864 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 869 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 878 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 884 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+run
+# ** Warning: Unsupported ALUop given: x
+#    Time: 902 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 918 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 920 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 925 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 954 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 970 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 972 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 977 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 986 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 992 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+run
+# ** Warning: Unsupported ALUop given: x
+#    Time: 1010 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 1026 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 1028 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 1033 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Unsupported ALUop given: x
+#    Time: 1062 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 1078 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 1080 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Unsupported ALUop given: x
+#    Time: 1084 ns  Scope: ucsbece154b_top_tb.top.riscv.c File: ucsbece154b_controller.v Line: 112
+# ** Warning: Attempted to write to $zero register
+#    Time: 1085 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1093 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1095 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1097 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# ** Warning: Attempted to write to $zero register
+#    Time: 1099 ns  Scope: ucsbece154b_top_tb.top.riscv.dp.rf File: ucsbece154b_rf.v Line: 27
+# End time: 15:18:01 on May 19,2025, Elapsed time: 0:04:17
+# Errors: 0, Warnings: 316

@@ -62,7 +62,7 @@ module ucsbece154b_icache #(
   logic [LOG_NUM_WAYS-1:0] hitWay;
 
   logic [LOG_BLOCK_WORDS-1:0] words_wait_counter;
-
+  logic [LOG_BLOCK_WORDS-1:0] write_wait_counter;
   logic [15:0] lfsr;
   logic [1:0] randBits;
 
@@ -112,10 +112,10 @@ module ucsbece154b_icache #(
           instruction = SRAM[setIndex][hitWay].data[blockIndex];
           ready = 1'b1;
         end
-	if (stateNext == words) begin
-	  instruction = memDataIn;
-          ready = 1'b1;
-	end
+        if (stateNext == words) begin
+          instruction = memDataIn;
+                ready = 1'b1;
+        end
       end
       words: begin
         if ((readAddress == oldAddress + 4) && (words_wait_counter != num_words - 1)) begin // might be num_words instead
@@ -151,12 +151,16 @@ module ucsbece154b_icache #(
         bufferTag <= memTagIndex;
         bufferData[memBlockIndex] <= memDataIn;
       end
-      if (stateNext == write) begin
+      if (stateNext == write && write_wait_counter == 0) begin
         SRAM[setIndex_w][randBits].v <= 1;
         SRAM[setIndex_w][randBits].tag <= tagIndex;
         for (m = 0; m < BLOCK_WORDS; m++) begin
           SRAM[setIndex_w][randBits].data[m] <= bufferData[m];
         end
+      end
+      if (stateNext == write) begin
+        prefetcherTag <= memTagIndex;
+        prefetcherData[memBlockIndex] <= memDataIn;
       end
     end
   end
@@ -173,6 +177,17 @@ module ucsbece154b_icache #(
     end
   end
 
+  always_ff @(posedge clk) begin
+    if (reset || (stateReg == words && stateNext == write)) begin // set to 0 upon reset or transition to write
+      write_wait_counter <= 0;
+    end else begin
+      if (write_wait_counter == BLOCK_WORDS - 1)
+        write_wait_counter <= 0;
+      else
+        write_wait_counter <= write_wait_counter + 1;
+    end
+  end
+
   // next state logic
   always_comb begin
     stateNext = stateReg;
@@ -183,9 +198,8 @@ module ucsbece154b_icache #(
             stateNext = read;
           else
             stateNext = delay;
-	end else
-	  stateNext = delay;
-        
+	      end else
+	        stateNext = delay;
       end
       delay: begin
         if (memDataReady)
@@ -198,7 +212,8 @@ module ucsbece154b_icache #(
           stateNext = write;
       end
       write: begin
-        stateNext = read;
+        if (write_wait_counter == BLOCK_WORDS - 1)
+          stateNext = read;
       end
     endcase;
   end

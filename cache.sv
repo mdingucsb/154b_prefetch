@@ -29,7 +29,7 @@ module ucsbece154b_icache #(
   localparam LOG_NUM_WAYS = $clog2(NUM_WAYS);
   localparam LOG_BLOCK_WORDS = $clog2(BLOCK_WORDS);
 
-  integer i, j, k, l, m;
+  integer i, j, k, l, m, n;
 
   typedef enum logic [1:0] {read, delay, words, write} state_t;
   state_t stateNext, stateReg;
@@ -57,6 +57,7 @@ module ucsbece154b_icache #(
   logic [LOG_NUM_SETS-1:0] setIndex_i;
   logic [LOG_BLOCK_WORDS-1:0] blockIndex;
   logic cacheHit;
+  logic prefetcherHit;
   logic [31:0] DataIn;
   logic [29-LOG_NUM_SETS-LOG_BLOCK_WORDS:0] memTagIndex;
   logic [LOG_BLOCK_WORDS:0] num_words;
@@ -98,6 +99,9 @@ module ucsbece154b_icache #(
         hitWay = l;
       end
     end
+    prefetcherHit = 0;
+    if (tagIndex == prefetcherTag[27:LOG_NUM_SETS] && setIndex == prefetcherTag[LOG_NUM_SETS-1:0])
+      prefetcherHit = 1;
 
     // output logic
     case (stateReg)
@@ -105,7 +109,10 @@ module ucsbece154b_icache #(
         if (cacheHit) begin
           instruction = SRAM[setIndex][hitWay].data[blockIndex];
           ready = 1'b1;
-        end else begin
+        end else if (prefetcherHit) begin
+	  instruction = prefetcherData[blockIndex];
+	  ready = 1'b1;
+	end else
           memReadRequest = 1'b1;
         end
       end
@@ -114,10 +121,13 @@ module ucsbece154b_icache #(
         if (cacheHit) begin
           instruction = SRAM[setIndex][hitWay].data[blockIndex];
           ready = 1'b1;
-        end
+        end else if (prefetcherHit) begin
+	  instruction = prefetcherData[blockIndex];
+	  ready = 1'b1;
+	end else
         if (stateNext == words) begin
           instruction = memDataIn;
-                ready = 1'b1;
+          ready = 1'b1;
         end
       end
       words: begin
@@ -127,7 +137,10 @@ module ucsbece154b_icache #(
         end else if (cacheHit) begin
           instruction = SRAM[setIndex][hitWay].data[blockIndex];
           ready = 1'b1;
-        end
+        end else if (prefetcherHit) begin
+	  instruction = prefetcherData[blockIndex];
+	  ready = 1'b1;
+	end
       end
       write: begin
         busy = 1'b1;

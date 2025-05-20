@@ -62,15 +62,20 @@ module ucsbece154_imem #(
     else if (state_reg == send_rest) begin
       if (block_index == (BLOCK_WORDS - 1)) // jump to first word of block if needed
         a_i <= a_i - 4 * (BLOCK_WORDS - 1);
+/*
       else if (send_count == BLOCK_WORDS - 1) begin
         a_i <= base_address + 32'd16;
       end else
         a_i <= a_i + 4;
-    end
+*/
+    end else if (send_count == BLOCK_WORDS - 1)
+      a_i <= base_address + 32'd16;
     else if (state_reg == send_prefetcher)
       a_i <= a_i + 4;
+    //else if
+      //a_i <= a_i + 4;
     else
-      a_i <= ReadAddress;
+      a_i <= a_i;
   end
   
   assign block_index = a_i[3:2];

@@ -48,6 +48,9 @@ module ucsbece154b_icache #(
 
   logic [29-LOG_BLOCK_WORDS:0] bufferTag;
   logic [31:0] bufferData [0:BLOCK_WORDS-1];
+  logic [29-LOG_BLOCK_WORDS:0] prefetcherTag;
+  logic [31:0] prefetcherData [0:BLOCK_WORDS-1];
+
   logic [29-LOG_NUM_SETS-LOG_BLOCK_WORDS:0] tagIndex;
   logic [LOG_NUM_SETS-1:0] setIndex;
   logic [LOG_NUM_SETS-1:0] setIndex_w;
@@ -71,7 +74,7 @@ module ucsbece154b_icache #(
   assign tagIndex = readAddress[31:LOG_NUM_SETS+LOG_BLOCK_WORDS+2]; // [31:7]
   assign setIndex = readAddress[LOG_NUM_SETS+LOG_BLOCK_WORDS+1:LOG_BLOCK_WORDS+2]; // [6:4]
   assign blockIndex = readAddress[LOG_BLOCK_WORDS+1:2]; // [3:2]
-  assign memTagIndex = memReadAddress[31:LOG_NUM_SETS+LOG_BLOCK_WORDS+2];
+  assign memTagIndex = memReadAddress[31:LOG_BLOCK_WORDS+2];
 
   always_ff @(posedge clk) begin
     oldAddress <= readAddress;

@@ -53,7 +53,7 @@ module ucsbece154_imem #(
   always @(posedge clk) begin
     if (state_reg == idle || state_next == fetch)
       a_i <= ReadAddress;
-    else if (state_reg == send_first && state_next == send_rest) begin // after first word
+    else if (state_reg == send_first || state_next == send_rest) begin // after first word
       if (block_index == (BLOCK_WORDS - 1)) // jump to first word of block if needed
         a_i <= a_i - 4 * (BLOCK_WORDS - 1);
       else
@@ -61,13 +61,7 @@ module ucsbece154_imem #(
     end
     else if (state_reg == send_rest) begin
       if (block_index == (BLOCK_WORDS - 1)) // jump to first word of block if needed
-        a_i <= a_i - 4 * (BLOCK_WORDS - 1);
-/*
-      else if (send_count == BLOCK_WORDS - 1) begin
         a_i <= base_address + 32'd16;
-      end else
-        a_i <= a_i + 4;
-*/
     end else if (send_count == BLOCK_WORDS - 1)
       a_i <= base_address + 32'd16;
     else if (state_reg == send_prefetcher)

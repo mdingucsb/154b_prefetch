@@ -110,11 +110,10 @@ module ucsbece154b_icache #(
           instruction = SRAM[setIndex][hitWay].data[blockIndex];
           ready = 1'b1;
         end else if (prefetcherHit) begin
-	  instruction = prefetcherData[blockIndex];
-	  ready = 1'b1;
-	end else
+	        instruction = prefetcherData[blockIndex];
+	        ready = 1'b1;
+	      end else
           memReadRequest = 1'b1;
-        end
       end
       delay: begin
         memReadRequest = 1'b1;
@@ -122,9 +121,9 @@ module ucsbece154b_icache #(
           instruction = SRAM[setIndex][hitWay].data[blockIndex];
           ready = 1'b1;
         end else if (prefetcherHit) begin
-	  instruction = prefetcherData[blockIndex];
-	  ready = 1'b1;
-	end else
+	        instruction = prefetcherData[blockIndex];
+	        ready = 1'b1;
+	      end else
         if (stateNext == words) begin
           instruction = memDataIn;
           ready = 1'b1;
@@ -138,14 +137,14 @@ module ucsbece154b_icache #(
           instruction = SRAM[setIndex][hitWay].data[blockIndex];
           ready = 1'b1;
         end else if (prefetcherHit) begin
-	  instruction = prefetcherData[blockIndex];
-	  ready = 1'b1;
-	end
+	        instruction = prefetcherData[blockIndex];
+	        ready = 1'b1;
+	      end
       end
       write: begin
         busy = 1'b1;
       end
-    endcase;
+    endcase
   end
 
   // SRAM reset, read, and write
